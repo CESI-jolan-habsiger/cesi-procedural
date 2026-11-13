@@ -1,7 +1,7 @@
 name: Html Validator
 
 on:
-  pull-request:
+  pull_request:
     branches:
       - develop
 
@@ -11,7 +11,8 @@ jobs:
         name: Html Validator
         steps:
         - uses: actions/checkout@v4
+
         - name: Html Validator
-            uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-            with:
-                root: /
+          uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+          with:
+            root: /
