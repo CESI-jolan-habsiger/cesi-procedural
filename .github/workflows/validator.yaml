@@ -1,0 +1,17 @@
+name: Html Validator
+
+on:
+  pull-request:
+    branches:
+      - develop
+
+jobs:
+    html-validator:
+        runs-on: ubuntu-latest
+        name: Html Validator
+        steps:
+        - uses: actions/checkout@v4
+        - name: Html Validator
+            uses: Cyb3r-Jak3/html-validator-action@v7.2.0
+            with:
+                root: /
